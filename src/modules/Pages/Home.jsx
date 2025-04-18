@@ -30,7 +30,7 @@ function Home() {
 			document.head.appendChild(newLink);
 		}
 	};
-	updateIcon("./favicon_io/favicon.ico");
+	updateIcon("./public/favicon_io/favicon.ico");
 
 	const [loading, setLoading] = useState(true);
 	const handleComplete = () => {
