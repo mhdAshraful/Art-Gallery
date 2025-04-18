@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@modules": ["./src/modules"],
+			"@images": ["./public/assets/images"],
+			"@shader": ["./src/experience/shaders"],
+			"@fonts": ["./public/assets/fonts"]
+		}
+	}
+}

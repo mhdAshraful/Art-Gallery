@@ -1,0 +1,60 @@
+@import "colors";
+@import "media";
+@import "button";
+@import "landing";
+@import "ourLocation";
+@import "footer";
+@import "../../node_modules/ol/ol.css";
+
+:root {
+	/* fallback fonts */
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-synthesis: weight;
+	font-weight: 400;
+	font-synthesis: weight;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+*,
+html,
+body,
+canvas {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overscroll-behavior: none;
+	color: $almostBlack;
+	background-color: $white;
+}
+/* Font Styles */
+.fonts-loaded body {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.375rem;
+	color: $gray;
+	line-height: 2rem;
+}
+
+.heading-font {
+	font-family: "Big Shoulders Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	// position: relative;
+}

@@ -1,0 +1,161 @@
+.blackThing {
+	background-color: $almostBlack;
+	mix-blend-mode: difference;
+	width: calc(100vw / 3);
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.headline {
+	text-transform: uppercase;
+	font-size: 3.75rem;
+	line-height: 0.9;
+	margin: 2rem 0;
+}
+
+// position an absolute div center horizontally width should be 100vw - 1rem on boths left and right
+
+.sections {
+	position: absolute;
+	left: 1rem;
+	right: 1rem;
+	min-width: calc(100vw - 2rem);
+	margin: auto;
+
+	&.topS1 {
+		top: 34vh;
+
+		.topHeading {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			.headline {
+				font-size: 3.75rem;
+				line-height: 0.9;
+				margin: 2rem 0;
+			}
+			.desc {
+				max-width: 90%;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	&.topS2 {
+		top: 168vh;
+		.leftAligned {
+			width: 100%;
+
+			.headline {
+				color: $almostBlack;
+				text-transform: uppercase;
+				margin: 0 0 2rem 0;
+				font-size: 3.125rem;
+			}
+			.desc {
+				max-width: 90%;
+			}
+		}
+	}
+	&.topS3 {
+		top: 345vh;
+
+		.rightAligned {
+			// width: 100%;
+			background-color: $almostBlack;
+			color: $white;
+			padding: 3rem 1rem;
+
+			.headline {
+				margin: 0 0 2rem 0;
+				font-size: 3.125rem;
+			}
+
+			.desc {
+				max-width: 90%;
+			}
+		}
+	}
+
+	@include TABLET {
+		min-width: calc(50vw - 3rem);
+		padding: 0 3rem;
+		&.topS1 {
+			top: 15vh;
+			left: 45vw;
+		}
+		&.topS2 {
+			top: 88vh;
+		}
+		&.topS3 {
+			top: 167vh;
+			left: 53vw;
+			min-width: calc(52vw - 4rem);
+			.rightAligned {
+				padding: 5rem 2rem;
+				.headline {
+					font-size: 3.125rem;
+					line-height: 2.81rem;
+				}
+				.desc {
+					font-size: 1.125rem;
+					line-height: 1.1;
+				}
+			}
+		}
+	}
+	@include DESKTOP {
+		min-width: 60vw;
+		margin: 0 10rem;
+
+		&.topS1 {
+			width: 50vw;
+			transform: translate(20%, 0);
+
+			.topHeading {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				gap: 36%;
+				.headline {
+					min-width: 25rem;
+					font-size: 5rem;
+					color: $white;
+				}
+			}
+		}
+		&.topS2 {
+			top: 125vh;
+
+			.leftAligned {
+				width: 40%;
+
+				.headline {
+					width: 100%;
+					font-size: 5rem;
+				}
+			}
+		}
+		&.topS3 {
+			top: 227vh;
+			left: 58vw;
+			min-width: 34vw;
+			margin: 0;
+
+			.rightAligned {
+				width: 100%;
+				background-color: $almostBlack;
+				color: $white;
+				padding: 6rem 4rem;
+
+				.headline {
+					font-size: 5rem;
+				}
+			}
+		}
+	}
+}
