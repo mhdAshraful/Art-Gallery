@@ -19,7 +19,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@modules": path.resolve(__dirname, "./src/modules"),
-			"@images": path.resolve(__dirname, "./public/assets/images"),
+			"@images": path.resolve(__dirname, "./src/assets/images"),
 			"@shader": path.resolve(__dirname, "./src/experience/shaders"),
 			"@fonts": path.resolve(__dirname, "./public/assets/fonts"),
 		},
