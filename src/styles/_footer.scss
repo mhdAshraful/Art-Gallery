@@ -2,7 +2,7 @@
 	position: absolute;
 	width: 100vw;
 	// 336 footer height deducted extra 2px
-	top: calc(100vh * 4.5 - 334px);
+	top: calc(100vh * 4.5 - 336px);
 
 	@include TABLET {
 		top: calc(100vh * 2.5 - 214px);
@@ -50,7 +50,7 @@
 			width: 100%;
 			font-size: 2rem;
 			line-height: 1;
-			margin-bottom: 3rem;
+			margin-bottom: 1.5rem;
 		}
 		.desc-text {
 			font-size: 1rem;
