@@ -25,10 +25,10 @@ const SceneGraph = () => {
 	const [hh, setHH] = useState(window.innerHeight);
 
 	const [texture, setTx] = useState([
-		"../src/assets/images/desktop/hero-m.jpg",
-		"../src/assets/images/desktop/image-grid-1@2x.jpg",
-		"../src/assets/images/desktop/image-grid-2@2x.jpg",
-		"../src/assets/images/desktop/image-grid-3@2x.jpg",
+		"assets/images/desktop/hero-m.jpg",
+		"assets/images/desktop/image-grid-1@2x.jpg",
+		"assets/images/desktop/image-grid-2@2x.jpg",
+		"assets/images/desktop/image-grid-3@2x.jpg",
 	]);
 
 	useEffect(() => {
@@ -45,17 +45,17 @@ const SceneGraph = () => {
 		const updatePhoto = () => {
 			if (ww >= 768) {
 				setTx([
-					"../src/assets/images/desktop/hero-d.jpg",
-					"../src/assets/images/desktop/image-grid-1@2x.jpg",
-					"../src/assets/images/desktop/image-grid-2@2x.jpg",
-					"../src/assets/images/desktop/image-grid-3@2x.jpg",
+					"assets/images/desktop/hero-d.jpg",
+					"assets/images/desktop/image-grid-1@2x.jpg",
+					"assets/images/desktop/image-grid-2@2x.jpg",
+					"assets/images/desktop/image-grid-3@2x.jpg",
 				]);
 			} else {
 				setTx([
-					"../src/assets/images/desktop/hero-m.jpg",
-					"../src/assets/images/desktop/image-grid-1@2x.jpg",
-					"../src/assets/images/desktop/image-grid-2@2x.jpg",
-					"../src/assets/images/desktop/image-grid-3@2x.jpg",
+					"assets/images/desktop/hero-m.jpg",
+					"assets/images/desktop/image-grid-1@2x.jpg",
+					"assets/images/desktop/image-grid-2@2x.jpg",
+					"assets/images/desktop/image-grid-3@2x.jpg",
 				]);
 			}
 		};
