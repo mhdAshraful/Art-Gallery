@@ -13,6 +13,7 @@ import { Icon, Style } from "ol/style";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Location = () => {
 	useEffect(() => {
