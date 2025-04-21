@@ -14,7 +14,7 @@ const Section1 = () => {
 					from a spark of inspiration. Will these pieces inspire you? Visit
 					us and find out.
 				</p>
-				<a style={{ textDecoration: "none" }} href="loc">
+				<a style={{ textDecoration: "none" }} href="/location">
 					<Buttons name="Our Location" direction=">" />
 				</a>
 			</div>

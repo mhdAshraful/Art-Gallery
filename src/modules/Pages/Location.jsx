@@ -6,7 +6,7 @@ import { OSM } from "ol/source";
 import { fromLonLat } from "ol/proj.js";
 
 import Buttons from "../common/Buttons";
-import marker from "../../assets/images/marker.svg?url";
+import marker from "/assets/images/marker.svg?url";
 import Feature from "ol/Feature";
 import { Point } from "ol/geom";
 import { Icon, Style } from "ol/style";
